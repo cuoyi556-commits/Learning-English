@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>儿童学英语单词小报生成器</title>
+    <link rel="stylesheet" href="css/variables.css?v=1">
+    <link rel="stylesheet" href="css/style.css?v=1">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>儿童学英语单词小报生成器</h1>
+            <p>输入场景和标题，自动生成儿童英语单词学习小报</p>
+        </header>
+
+        <main>
+            <!-- API Key 配置区域 -->
+            <section class="card">
+                <div class="form-group">
+                    <label for="apiKey">API Key</label>
+                    <div class="api-config">
+                        <input type="password" id="apiKey" placeholder="请输入 Nano Banana Pro API Key">
+                        <button id="saveApiKey">保存</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 输入区域 -->
+            <section class="card">
+                <div class="form-group">
+                    <label for="sceneSelect">主题/场景</label>
+                    <select id="sceneSelect">
+                        <option value="">选择场景...</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="sceneInput">或输入自定义场景</label>
+                    <input type="text" id="sceneInput" placeholder="如：海底世界、太空站、农场等">
+                </div>
+
+                <div class="form-group">
+                    <label for="titleInput">小报标题</label>
+                    <input type="text" id="titleInput" placeholder="如：走进超市、快乐医院">
+                </div>
+
+                <button id="generateBtn" class="btn-primary">生成小报</button>
+            </section>
+
+            <!-- 进度显示区域 -->
+            <section class="card progress-section" id="progressSection" style="display: none;">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <p class="progress-text" id="progressText">正在生成中...</p>
+            </section>
+
+            <!-- 结果预览区域 -->
+            <section class="card result-section" id="resultSection" style="display: none;">
+                <h2>生成结果</h2>
+                <div class="image-container">
+                    <img id="resultImage" src="" alt="生成的英语单词小报">
+                </div>
+                <div class="action-buttons">
+                    <button id="downloadBtn">下载图片</button>
+                    <button id="regenerateBtn">重新生成</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>使用 Nano Banana Pro API 生成 | 适合 5-9 岁儿童学英语单词</p>
+        </footer>
+    </div>
+
+    <script type="module" src="js/app.js?v=1"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+/* CSS 变量定义 - 儿童友好主题 */
+
+:root {
+    /* 彩虹色系 */
+    --kid-red: #FF6B6B;
+    --kid-orange: #FFA06B;
+    --kid-yellow: #FFD93D;
+    --kid-green: #6BCB77;
+    --kid-blue: #4D96FF;
+    --kid-purple: #9D4EDD;
+    --kid-pink: #FF69B4;
+
+    /* 主色调 */
+    --primary-color: var(--kid-blue);
+    --primary-hover: #3B7EE6;
+    --secondary-color: var(--kid-pink);
+    --secondary-hover: #E5529E;
+    --accent-color: var(--kid-yellow);
+
+    /* 背景色 - 温暖柔和 */
+    --background-color: #FFF9E6;
+    --surface-color: #FFFFFF;
+    --text-primary: #4A4A4A;
+    --text-secondary: #7A7A7A;
+    --border-color: #E8E8E8;
+
+    /* 状态色 */
+    --error-color: var(--kid-red);
+    --success-color: var(--kid-green);
+    --warning-color: var(--kid-orange);
+
+    /* 间距系统 */
+    --spacing-xs: 6px;
+    --spacing-sm: 12px;
+    --spacing-md: 18px;
+    --spacing-lg: 24px;
+    --spacing-xl: 36px;
+
+    /* 字体 */
+    --font-family: 'Comic Sans MS', 'YouYuan', 'Microsoft YaHei', 'SimHei', cursive, sans-serif;
+    --font-size-xs: 13px;
+    --font-size-sm: 15px;
+    --font-size-md: 17px;
+    --font-size-lg: 20px;
+    --font-size-xl: 28px;
+    --font-size-2xl: 36px;
+
+    /* 圆角 - 更圆润 */
+    --border-radius-sm: 10px;
+    --border-radius-md: 16px;
+    --border-radius-lg: 24px;
+    --border-radius-xl: 32px;
+
+    /* 阴影 - 柔和可爱 */
+    --shadow-sm: 0 3px 8px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 8px 25px rgba(0, 0, 0, 0.12);
+    --shadow-colored: 0 5px 15px rgba(255, 107, 107, 0.2);
+
+    /* 过渡 */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.4s ease;
+    --transition-bounce: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
